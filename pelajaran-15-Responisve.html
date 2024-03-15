@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responive</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            header{
+                background-color: aliceblue;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+
+            header h1{
+                margin-left: 20px;
+            }
+
+            .container{
+                margin-top: 100px;
+            }
+
+            /* Menu */
+            ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            li{
+                padding: 10px;
+                background-color: aqua;
+                margin-bottom: 10px;
+                box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+            }
+
+            .gambar img{
+                width: 100%;
+
+            }
+
+            footer{
+                background-color: aliceblue;
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+                height: 60px;
+
+            }
+
+            [class*="col-"]{
+                padding: 10px;
+                width: 100%;
+            }
+
+            @media only screen and (min-width : 768px) {
+                .col-1{width: 8.33%;}
+                .col-2{width: 16.66;}
+                .col-3{width: 25%;}
+                .col-4{width: 33.33;}
+                .col-5{width: 41.66;}
+                .col-6{width: 50%;}
+                .col-7{width: 58.33%;}
+                .col-8{width: 66.66%;}
+                .col-9{width: 75%;}
+                .col-10{width: 83%;}
+                .col-11{width: 91.66%;}
+                .col-12{width: 100%;}
+
+                [class*="col-"]{
+                    float: left;
+                }
+
+                footer{
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                }
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Indonesia</h1>
+        </header>
+
+        <div class="container">
+            <div class="menu col-3">
+                <ul>
+                    <li>The Islands</li>
+                    <li>The Cities</li>
+                    <li>The Foods</li>
+                    <li>The Attraction</li>
+                </ul>
+            </div>
+
+            <div class="konten col-6">
+                <h1>The Islandds</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ducimus officiis provident dolor consequatur voluptates molestiae alias laudantium, quos iusto nisi repudiandae cum quisquam fugiat! Perspiciatis minima minus consequuntur voluptate.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam quo et ea aperiam temporibus officiis pariatur officia sequi consequuntur, facilis dolorum excepturi cupiditate magnam quod vero eum. Iste, nihil.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores fugiat id quibusdam hic, nisi itaque nobis fugit rem eius quidem tenetur ex provident repellendus. Cumque ad eius vitae veritatis!</p>
+            </div>
+
+            <div class="gambar col-3">
+                <img src="asset/img/Background.jpg" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Copyright 2024</p>
+        </footer>
+    </body>
+</html>

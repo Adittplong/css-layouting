@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        body{
+            width: 90%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        nav,footer{
+            background-color: #efefef;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        li{
+            display: inline;
+            padding: 5px;
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /* Grid Style */
+
+        .grid-container{
+            display: grid;
+            margin: 1%;
+            background-color: #efefef;
+            justify-content: space-evenly;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 30% 30% 30%;
+            gap: 10px 10px;
+        }
+
+        .grid-item{
+            background-color: antiquewhite;
+            border: 1px solid green;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .item3{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        footer{
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Logo</h1>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Produk</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; Copyright 2024</p>
+    </footer>
+</body>
+</html>

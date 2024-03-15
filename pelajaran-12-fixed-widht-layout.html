@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Width</title>
+
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header h1{
+            text-align: center;
+            background-color: #efefef;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            text-align: center;
+            background-color: #efefef;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav li{
+            display: inline;
+            padding: 5px;
+
+        }
+        
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            padding: 15px;
+            border-radius: 20px; 
+        }
+
+        nav ul li a:hover{
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            padding: 15px;
+            border-radius: 20px; 
+        }
+
+        #highlight{
+            text-align: center;
+            background-color: #efefef;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #highlight img{
+            width: 50%;
+
+        }
+
+        article{
+            width: 280px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #efefef;
+            float: left;
+            height: 200px;
+        }
+
+        .content{
+            height: 100%;
+            overflow: auto;
+        }
+
+        footer{
+            text-align: center;
+            background-color: #efefef;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Logo</h1>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Produk</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+            <div id="highlight">
+                <h2>highlight</h2>
+                <img src="asset/img/Background.jpg" alt="" width="400" height="400">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem temporibus odit, fuga quisquam corrupti modi tempore accusamus illo deserunt, quibusdam excepturi dignissimos vitae quasi nostrum ratione quae. Quaerat, voluptatibus dolore.</p>
+            </div>
+
+            <article class="kolom1">
+                <h3>artikel 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, et illum cumque eligendi repellat culpa dicta maxime alias placeat odio quisquam numquam quidem illo, tempore corrupti ex voluptatum non atque!
+                </p>
+            </article>
+
+            <article class="kolom2">
+                <h3>artikel 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, et illum cumque eligendi repellat culpa dicta maxime alias placeat odio quisquam numquam quidem illo, tempore corrupti ex voluptatum non atque!
+                </p>
+            </article>
+            
+            <article class="kolom3">
+                <h3>artikel 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, et illum cumque eligendi repellat culpa dicta maxime alias placeat odio quisquam numquam quidem illo, tempore corrupti ex voluptatum non atque!
+                </p>
+            </article>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; Copyright 2024</p>
+    </footer>
+</body>
+</html>
